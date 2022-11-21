@@ -1,14 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-import {splitIntoWords} from "./hello-tests/01";
-
-const sentence = 'hello my friend';
-const result = splitIntoWords(sentence)
-console.log(result[0] === 'hello', result[1] === 'my')
+import {User} from "./06/06-callback";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -16,7 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
     <React.StrictMode>
-        <App/>
+        <User/>
     </React.StrictMode>
 );
 
